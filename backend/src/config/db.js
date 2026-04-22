@@ -6,8 +6,11 @@ const connectDB = async () => {
     console.log("MongoDB Atlas connected");
   } catch (error) {
     console.error("MongoDB connection failed:", error.message);
-    process.exit(1);
+    // Keep the server running so it can return clear API errors (and to allow
+    // the DB to be fixed/restarted without killing the process).
+    return false;
   }
+  return true;
 };
 
 module.exports = connectDB;
