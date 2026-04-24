@@ -1,82 +1,78 @@
-# ✨ Wishora — Gift Registry & Wishlist App
+✨ Wishora – Gift Registry & Wishlist App
 
-A premium full-stack web application that lets users create wishlists, share them with friends, and avoid duplicate gifts — all wrapped in a cinematic, elegant UI.
-
----
-
-## 🚀 Features
-
-### 🎬 Cinematic UI
-- Dark, minimal, premium design
-- Smooth animations using Framer Motion
-- Background video landing page
-- Subtle sparkle effects
+Wishora is a full-stack web application that allows users to create, manage, and share wishlists for gifts. It helps avoid duplicate gifting and makes it easier for friends and family to choose the perfect gift.
 
 ---
 
-### 🔐 Authentication
-- User Signup & Login
-- Secure password hashing (bcrypt)
-- JWT-based authentication
+🚀 Features
+
+- 🎁 Create and manage personal wishlists
+- 👤 User authentication (Signup/Login)
+- 🔗 Share wishlist with others
+- ✅ Mark items as reserved or purchased
+- 📱 Responsive and user-friendly UI
 
 ---
 
-### 🎁 Wishlist System
-- Create wishlists for any occasion
-- Add items with:
-  - Name
-  - Product link
-  - Description
+🛠️ Tech Stack
 
----
+Frontend
 
-### 🔗 Sharing System
-- Generate unique public link
-- Share wishlist with friends
-
----
-
-### 👥 Friend Interaction
-- Friends can view wishlist
-- Reserve items they want to gift
-
----
-
-### 🚫 Duplicate Prevention
-- Once an item is reserved:
-  - It is marked as **"Taken"**
-  - Others cannot select it
-
----
-
-### 🔒 Privacy Feature
-- Does NOT reveal who reserved the item
-- Maintains surprise element 🎉
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-- Next.js 14 (App Router)
-- TypeScript
+- React (with Vite)
+- JavaScript (JSX)
 - Tailwind CSS
-- Framer Motion
 
-### Backend
+Backend
+
 - Node.js
 - Express.js
 
-### Database
+Database
+
 - MongoDB Atlas
 - Mongoose
 
 ---
 
-## ⚙️ Installation & Setup
+📦 Installation & Setup
 
-### 1️⃣ Clone the Repository
+1️⃣ Clone the repository
 
-```bash
-git clone https://github.com/your-username/wishora.git
-cd wishora
+git clone https://github.com/Tarinibhima/Wishora.git
+cd Wishora
+
+---
+
+2️⃣ Setup Backend
+
+cd backend
+npm install
+npm start
+
+---
+
+3️⃣ Setup Frontend
+
+cd frontend
+npm install
+npm run dev
+
+---
+
+🔐 Environment Setup
+
+1. Create a ".env" file inside the backend folder
+2. Add the following:
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+
+---
+
+💡 Future Improvements
+
+- 🔔 Notifications for wishlist updates
+- 🎨 Improved UI/UX and animations
+- 📱 Mobile app version
+
+---
