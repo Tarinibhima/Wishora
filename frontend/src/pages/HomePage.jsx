@@ -79,6 +79,16 @@ export default function HomePage() {
           <div className="mb-10 text-center">
             <h1 className="cinematic-title text-6xl sm:text-8xl">Wishora</h1>
           </div>
+          <motion.button
+            type="button"
+            aria-label="Scroll to story"
+            onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+            className="text-4xl text-[#d7e5f5] transition hover:text-white"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+          >
+            ↓
+          </motion.button>
         </section>
 
         <AnimatePresence>
